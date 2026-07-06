@@ -37,7 +37,8 @@ heroTL
   .to('.hero-title .line', { opacity: 1, y: 0, duration: 0.9, stagger: 0.15 }, '-=0.5')
   .to('.hero-sub', { opacity: 1, y: 0, duration: 0.8 }, '-=0.4')
   .to('.hero-actions', { opacity: 1, y: 0, duration: 0.8 }, '-=0.5')
-  .to('.hero-socials', { opacity: 1, y: 0, duration: 0.8 }, '-=0.5');
+  .to('.hero-socials', { opacity: 1, y: 0, duration: 0.8 }, '-=0.5')
+  .to('.hero-photo', { opacity: 1, y: 0, duration: 0.8 }, '-=0.7');
 
 /* ---------- Scroll-triggered reveals for everything else ---------- */
 gsap.utils.toArray('#about .reveal, #experience .reveal, #projects .reveal, #skills .reveal, #contact .reveal')
