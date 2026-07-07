@@ -420,9 +420,9 @@ section { position: relative; padding: 88px 0; overflow: hidden; }
 .skill-group:nth-child(1) .tags span { border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
 .skill-group:nth-child(2) .tags span { border-color: color-mix(in srgb, var(--accent-2) 40%, var(--border)); }
 .skill-group:nth-child(3) .tags span { border-color: color-mix(in srgb, var(--accent-3) 40%, var(--border)); }
-.awards { border-top: 1px solid var(--border); padding-top: 24px; }
+.awards { border-top: 1px solid var(--border); padding-top: 24px; text-align: center; }
 .awards h3 { font-family: var(--font-display); margin-bottom: 14px; font-size: 1.05rem; font-weight: 700; }
-.award-badges { display: flex; flex-wrap: wrap; gap: 10px; }
+.award-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 .award-badge {
   display: flex;
   align-items: center;
