@@ -181,16 +181,6 @@ img { max-width: 100%; display: block; }
   color: var(--text-dim);
   font-size: 0.85rem;
 }
-.hero-scribble {
-  position: absolute;
-  right: -18px;
-  bottom: -46px;
-  width: 60px;
-  height: 60px;
-  color: var(--accent-2);
-  opacity: 0.6;
-  z-index: 1;
-}
 
 /* ---------- Sections ---------- */
 section { position: relative; padding: 88px 0; overflow: hidden; }
@@ -500,7 +490,7 @@ footer {
   .hero-content { max-width: 100%; }
   .hero-actions, .hero-socials { justify-content: center; }
   .exp-bubbles { flex-direction: column; }
-  .exp-bubble, .exp-bubble:hover, .exp-bubble.active { flex-grow: 0; width: 100%; }
+  .exp-bubble, .exp-bubble:hover, .exp-bubble.active { flex: 0 0 auto; width: 100%; }
 }
 
 @media (max-width: 700px) {
@@ -529,7 +519,6 @@ footer {
   .about-stats { grid-template-columns: 1fr 1fr; }
   .hero-photo-circle { width: 170px; height: 170px; }
   .hero-blob { width: 280px; height: 280px; top: calc(50% - 64px); left: calc(50% - 140px); }
-  .hero-scribble { width: 44px; height: 44px; right: -10px; bottom: -30px; }
   #hero { min-height: auto; padding: 100px 0 32px; }
   .section-blob { display: none; }
 }
