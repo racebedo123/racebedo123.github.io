@@ -137,19 +137,47 @@
       <p class="section-label reveal">02 — Experience</p>
       <h2 class="section-title reveal">Where I've worked</h2>
 
-      <p class="exp-hint reveal">Tap or hover a role to expand it</p>
+      <div class="exp-layout reveal">
 
-      <div class="exp-bubbles reveal">
+        <div class="exp-tabs" role="tablist">
+          <button class="exp-tab active" type="button" role="tab" aria-selected="true" aria-controls="exp-panel-0" data-target="exp-panel-0">
+            <img class="exp-tab-logo" src="images/gd-logo.png" alt="General Dynamics Mission Systems logo" />
+            <span class="exp-tab-text">
+              <span class="exp-tab-title">Guidance Software Engineering Intern</span>
+              <span class="exp-tab-org">General Dynamics Mission Systems</span>
+              <span class="exp-tab-date">Jun 2025 — Present</span>
+            </span>
+          </button>
+          <button class="exp-tab" type="button" role="tab" aria-selected="false" aria-controls="exp-panel-1" data-target="exp-panel-1">
+            <img class="exp-tab-logo" src="images/conedison-logo.png" alt="Consolidated Edison logo" />
+            <span class="exp-tab-text">
+              <span class="exp-tab-title">Systems Analyst CO-OP</span>
+              <span class="exp-tab-org">Consolidated Edison</span>
+              <span class="exp-tab-date">Sep 2024 — Apr 2025</span>
+            </span>
+          </button>
+          <button class="exp-tab" type="button" role="tab" aria-selected="false" aria-controls="exp-panel-2" data-target="exp-panel-2">
+            <img class="exp-tab-logo" src="images/conedison-logo.png" alt="Consolidated Edison logo" />
+            <span class="exp-tab-text">
+              <span class="exp-tab-title">IT Intern</span>
+              <span class="exp-tab-org">Consolidated Edison</span>
+              <span class="exp-tab-date">Jun 2024 — Aug 2024</span>
+            </span>
+          </button>
+          <button class="exp-tab" type="button" role="tab" aria-selected="false" aria-controls="exp-panel-3" data-target="exp-panel-3">
+            <img class="exp-tab-logo" src="images/rpi-logo.png" alt="RPI seal" />
+            <span class="exp-tab-text">
+              <span class="exp-tab-title">Teaching Assistant</span>
+              <span class="exp-tab-org">RPI CS Department</span>
+              <span class="exp-tab-date">Jan 2024 — May 2024</span>
+            </span>
+          </button>
+        </div>
 
-        <div class="exp-bubble" tabindex="0">
-          <div class="exp-bubble-summary">
-            <img class="exp-bubble-logo" src="images/gd-logo.png" alt="General Dynamics Mission Systems logo" />
-            <span class="exp-bubble-date">Jun 2025 — Present</span>
-            <h3>Guidance Software Engineering Intern</h3>
-            <p class="exp-bubble-org">General Dynamics Mission Systems</p>
-          </div>
-          <div class="exp-bubble-detail">
-            <p class="exp-bubble-org-full">Pittsfield, MA</p>
+        <div class="exp-panels">
+
+          <div class="exp-panel active" id="exp-panel-0" role="tabpanel">
+            <p class="exp-panel-org-full">Pittsfield, MA</p>
             <ul>
               <li>Design and create a distributed C++ publisher-subscriber system with 5 nodes and &lt;20ms latency for real-time data distribution</li>
               <li>Develop a C++ socket-based power supply simulator for hardware-free DDS service code testing, eliminating a testing bottleneck</li>
@@ -157,19 +185,14 @@
               <li>Debug and extend Python keyword libraries underlying Robot Framework DDS test automation, building on prior C++ DDS work</li>
               <li>Configure operating systems and manage 4+ virtual machines on a test equipment lab server to ensure operational readiness</li>
             </ul>
-            <div class="tags"><span>C++</span><span>DDS</span><span>Docker</span><span>IaC</span><span>Python</span></div>
+            <div class="tags">
+              <span class="clearance-tag"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 8.9 8 10 4.6-1.1 8-5 8-10V5l-8-3Z"/></svg>Active Secret Clearance</span>
+              <span>C++</span><span>DDS</span><span>Docker</span><span>IaC</span><span>Python</span>
+            </div>
           </div>
-        </div>
 
-        <div class="exp-bubble" tabindex="0">
-          <div class="exp-bubble-summary">
-            <img class="exp-bubble-logo" src="images/conedison-logo.png" alt="Consolidated Edison logo" />
-            <span class="exp-bubble-date">Sep 2024 — Apr 2025</span>
-            <h3>Systems Analyst CO-OP</h3>
-            <p class="exp-bubble-org">Consolidated Edison</p>
-          </div>
-          <div class="exp-bubble-detail">
-            <p class="exp-bubble-org-full">Consolidated Edison Company of New York · NYC, NY</p>
+          <div class="exp-panel" id="exp-panel-1" role="tabpanel">
+            <p class="exp-panel-org-full">Consolidated Edison Company of New York · NYC, NY</p>
             <ul>
               <li>Designed automated test scripts across 4+ concurrent projects for the Maximo Test Automation Project</li>
               <li>Resolved legacy SpecFlow Gherkin script issues to ensure reliable scheduled test execution</li>
@@ -178,34 +201,18 @@
             </ul>
             <div class="tags"><span>C#</span><span>Selenium</span><span>SpecFlow</span><span>Azure DevOps</span></div>
           </div>
-        </div>
 
-        <div class="exp-bubble" tabindex="0">
-          <div class="exp-bubble-summary">
-            <img class="exp-bubble-logo" src="images/conedison-logo.png" alt="Consolidated Edison logo" />
-            <span class="exp-bubble-date">Jun 2024 — Aug 2024</span>
-            <h3>IT Intern</h3>
-            <p class="exp-bubble-org">Consolidated Edison</p>
-          </div>
-          <div class="exp-bubble-detail">
-            <p class="exp-bubble-org-full">Consolidated Edison Company of New York · NYC, NY</p>
+          <div class="exp-panel" id="exp-panel-2" role="tabpanel">
+            <p class="exp-panel-org-full">Consolidated Edison Company of New York · NYC, NY</p>
             <ul>
               <li>Managed resources for the Maximo CWorx go-live, coordinating with 15+ distinct teams</li>
               <li>Tracked IT tickets through Azure DevOps to maintain cross-team communication</li>
             </ul>
             <div class="tags"><span>SQL</span><span>Oracle</span><span>Azure DevOps</span></div>
           </div>
-        </div>
 
-        <div class="exp-bubble" tabindex="0">
-          <div class="exp-bubble-summary">
-            <img class="exp-bubble-logo" src="images/rpi-logo.png" alt="RPI seal" />
-            <span class="exp-bubble-date">Jan 2024 — May 2024</span>
-            <h3>Teaching Assistant</h3>
-            <p class="exp-bubble-org">RPI CS Department</p>
-          </div>
-          <div class="exp-bubble-detail">
-            <p class="exp-bubble-org-full">RPI Computer Science Department · Troy, NY — Data Structures</p>
+          <div class="exp-panel" id="exp-panel-3" role="tabpanel">
+            <p class="exp-panel-org-full">RPI Computer Science Department · Troy, NY — Data Structures</p>
             <ul>
               <li>Taught binary trees, heaps, hash maps, and core algorithms with an emphasis on C++ implementation</li>
               <li>Led weekly office hours and labs, supporting 30+ students</li>
@@ -213,8 +220,8 @@
             </ul>
             <div class="tags"><span>C++</span><span>Teaching</span></div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
